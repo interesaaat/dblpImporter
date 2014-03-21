@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+<type-mapping>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+</type-mapping>
+
+<table-filter match-schema="dblp" match-name=".*"></table-filter>
+	<table-filter match-name="article" match-catalog="dblp"></table-filter>
+	<table-filter match-name="author_a" match-catalog="dblp"></table-filter>
+	<table-filter match-name="author_b" match-catalog="dblp"></table-filter>
+	<table-filter match-name="author_c" match-catalog="dblp"></table-filter>
+	<table-filter match-name="author_master" match-catalog="dblp"></table-filter>
+	<table-filter match-name="author_p" match-catalog="dblp"></table-filter>
+	<table-filter match-name="author_phd" match-catalog="dblp"></table-filter>
+	<table-filter match-name="author_w" match-catalog="dblp"></table-filter>
+	<table-filter match-name="book" match-catalog="dblp"></table-filter>
+	<table-filter match-name="editor_b" match-catalog="dblp"></table-filter>
+	<table-filter match-name="editor_p" match-catalog="dblp"></table-filter>
+	<table-filter match-name="in_collection" match-catalog="dblp"></table-filter>
+	<table-filter match-name="in_proceeding" match-catalog="dblp"></table-filter>
+	<table-filter match-name="master_thesis" match-catalog="dblp"></table-filter>
+	<table-filter match-name="person" match-catalog="dblp"></table-filter>
+	<table-filter match-name="phd_thesis" match-catalog="dblp"></table-filter>
+	<table-filter match-name="proceeding" match-catalog="dblp"></table-filter>
+	<table-filter match-name="www" match-catalog="dblp"></table-filter>
+</hibernate-reverse-engineering>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 13, 2012 6:22:22 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="schema.Person" table="person" catalog="dblp">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="65535" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="65535" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="65535" />
+        </property>
+        <property name="homepage" type="string">
+            <column name="homepage" length="65535" />
+        </property>
+        <property name="affiliation" type="string">
+            <column name="affiliation" length="65535" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="65535" />
+        </property>
+        <property name="bio" type="string">
+            <column name="bio" length="65535" />
+        </property>
+        <property name="position" type="string">
+            <column name="position" length="65535" />
+        </property>
+        <property name="phdUniv" type="string">
+            <column name="phd_univ" length="65535" />
+        </property>
+        <property name="phdMajor" type="string">
+            <column name="phd_major" length="65535" />
+        </property>
+        <property name="phdDate" type="string">
+            <column name="phd_date" />
+        </property>
+        <property name="msUniv" type="string">
+            <column name="ms_univ" length="65535" />
+        </property>
+        <property name="msMajor" type="string">
+            <column name="ms_major" length="65535" />
+        </property>
+        <property name="msDate" type="string">
+            <column name="ms_date" />
+        </property>
+        <property name="bsUniv" type="string">
+            <column name="bs_univ" length="65535" />
+        </property>
+        <property name="bsMajor" type="string">
+            <column name="bs_major" length="65535" />
+        </property>
+        <property name="bsDate" type="string">
+            <column name="bs_date" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 13, 2012 6:22:22 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="schema.Proceeding" table="proceeding" catalog="dblp">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="procId" type="string">
+            <column name="proc_id" length="65535" not-null="true" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" length="65535" />
+        </property>
+        <property name="volume" type="string">
+            <column name="volume" length="65535" />
+        </property>
+        <property name="number" type="string">
+            <column name="number" length="65535" />
+        </property>
+        <property name="ee" type="string">
+            <column name="ee" length="65535" />
+        </property>
+        <property name="year" type="java.lang.Integer">
+            <column name="year" />
+        </property>
+        <property name="journal" type="string">
+            <column name="journal" length="65535" />
+        </property>
+        <property name="pages" type="string">
+            <column name="pages" length="65535" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" length="65535" />
+        </property>
+        <property name="publisher" type="string">
+            <column name="publisher" length="65535" />
+        </property>
+        <property name="crossref" type="string">
+            <column name="crossref" length="65535" />
+        </property>
+        <property name="booktitle" type="string">
+            <column name="booktitle" length="65535" />
+        </property>
+        <property name="cite" type="string">
+            <column name="cite" length="65535" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="65535" />
+        </property>
+        <property name="isbn" type="string">
+            <column name="isbn" length="65535" />
+        </property>
+        <property name="series" type="string">
+            <column name="series" length="65535" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

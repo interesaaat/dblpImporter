@@ -1,0 +1,124 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>dbgroup</groupId>
+  <artifactId>dblpImporter</artifactId>
+  <version>0.0.1</version>
+  <packaging>jar</packaging>
+
+  <name>dblpImporter</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.6</version>
+   </dependency>
+   <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>4.1.4.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <version>4.1.4.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-annotations</artifactId>
+      <version>3.5.6-Final</version>   
+    </dependency>
+    <dependency>
+        <groupId>javassist</groupId>
+        <artifactId>javassist</artifactId>
+        <version>3.12.1.GA</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss</groupId>
+      <artifactId>jandex</artifactId>
+      <version>1.0.3.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml</groupId>
+      <artifactId>classmate</artifactId>
+      <version>0.5.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.googlecode.json-simple</groupId>
+      <artifactId>json-simple</artifactId>
+      <version>1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.6.6</version>
+   </dependency>
+   <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.6.6</version>
+</dependency>
+  </dependencies>
+
+  <repositories>
+   <repository>
+      <id>JBoss Repository</id>
+      <url>https://repository.jboss.org/nexus/content/groups/public</url>
+      <layout>default</layout>
+   </repository>
+  </repositories>
+  <pluginRepositories>
+  <pluginRepository>
+     <id>onejar-maven-plugin.googlecode.com</id>
+     <url>http://onejar-maven-plugin.googlecode.com/svn/mavenrepo</url>
+  </pluginRepository>
+  </pluginRepositories>
+
+  <build>
+    <plugins>
+        <plugin>
+    <groupId>org.dstovall</groupId>
+    <artifactId>onejar-maven-plugin</artifactId>
+    <executions>
+      <execution>
+        <id>build-dblp-importer</id>
+          <configuration>
+            <mainClass>dblpImporter.Parser</mainClass>
+            <attachToBuild>true</attachToBuild>
+            <classifier>onejar</classifier>
+            <filename>dblpImporter.jar</filename>
+          </configuration>
+          <goals>
+            <goal>one-jar</goal>
+          </goals>
+        </execution>
+      <execution>
+        <id>build-arnetminer-importer</id>
+          <configuration>
+            <mainClass>arnetminerImporter.Importer</mainClass>
+            <attachToBuild>true</attachToBuild>
+            <classifier>onejar</classifier>
+            <filename>arnetminterImporter.jar</filename>
+          </configuration>
+          <goals>
+            <goal>one-jar</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+    </plugins>
+  </build>
+</project>

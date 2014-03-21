@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 13, 2012 6:22:22 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="schema.AuthorC" table="author_c" catalog="dblp">
+        <composite-id name="id" class="schema.AuthorCId">
+            <key-property name="personId" type="int">
+                <column name="person_id" />
+            </key-property>
+            <key-property name="inCollId" type="int">
+                <column name="in_coll_id" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

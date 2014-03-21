@@ -1,0 +1,47 @@
+02:33:42,472  INFO Importer:35 - Hello World
+02:33:42,750  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+02:33:42,758  INFO Version:41 - HHH000412: Hibernate Core {4.1.4.Final}
+02:33:42,762  INFO Environment:239 - HHH000206: hibernate.properties not found
+02:33:42,765  INFO Environment:342 - HHH000021: Bytecode provider name : javassist
+02:33:42,800  INFO Configuration:1985 - HHH000042: Configuring from file: hibernate.cfg.xml
+02:33:42,871  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:42,905  INFO Configuration:718 - HHH000221: Reading mappings from resource: schema/Www.hbm.xml
+02:33:42,956  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:43,013  INFO Configuration:718 - HHH000221: Reading mappings from resource: schema/Person.hbm.xml
+02:33:43,015  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:43,050  INFO Configuration:718 - HHH000221: Reading mappings from resource: schema/AuthorW.hbm.xml
+02:33:43,054  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:43,068  INFO Configuration:718 - HHH000221: Reading mappings from resource: schema/PhdThesis.hbm.xml
+02:33:43,074  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:43,094  INFO Configuration:718 - HHH000221: Reading mappings from resource: schema/InCollection.hbm.xml
+02:33:43,098  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:43,120  INFO Configuration:718 - HHH000221: Reading mappings from resource: schema/MasterThesis.hbm.xml
+02:33:43,122  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:43,137  INFO Configuration:718 - HHH000221: Reading mappings from resource: schema/AuthorI.hbm.xml
+02:33:43,142  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:43,150  INFO Configuration:718 - HHH000221: Reading mappings from resource: schema/Book.hbm.xml
+02:33:43,154  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:43,162  INFO Configuration:718 - HHH000221: Reading mappings from resource: schema/AuthorA.hbm.xml
+02:33:43,165  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:43,172  INFO Configuration:718 - HHH000221: Reading mappings from resource: schema/AuthorC.hbm.xml
+02:33:43,179  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:43,183  INFO Configuration:718 - HHH000221: Reading mappings from resource: schema/AuthorB.hbm.xml
+02:33:43,186  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:43,194  INFO Configuration:718 - HHH000221: Reading mappings from resource: schema/InProceeding.hbm.xml
+02:33:43,201  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:43,208  INFO Configuration:718 - HHH000221: Reading mappings from resource: schema/Proceeding.hbm.xml
+02:33:43,215  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:43,227  INFO Configuration:718 - HHH000221: Reading mappings from resource: schema/Article.hbm.xml
+02:33:43,233  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:43,245  INFO Configuration:718 - HHH000221: Reading mappings from resource: schema/EditorP.hbm.xml
+02:33:43,250  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+02:33:43,263  INFO Configuration:2068 - HHH000041: Configured SessionFactory: null
+02:33:43,434  INFO DriverManagerConnectionProviderImpl:96 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+02:33:43,439  INFO DriverManagerConnectionProviderImpl:130 - HHH000115: Hibernate connection pool size: 1
+02:33:43,439  INFO DriverManagerConnectionProviderImpl:133 - HHH000006: Autocommit mode: false
+02:33:43,439  INFO DriverManagerConnectionProviderImpl:147 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://labbd.ing.unimo.it/dblp]
+02:33:43,440  INFO DriverManagerConnectionProviderImpl:152 - HHH000046: Connection properties: {user=basididati, password=****}
+02:33:43,802  INFO Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLMyISAMDialect
+02:33:43,810  INFO LobCreatorBuilder:94 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+02:33:43,821  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+02:33:43,828  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
