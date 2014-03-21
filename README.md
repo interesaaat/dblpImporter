@@ -1,9 +1,11 @@
 dblpImporter
 ============
 
-Java application for translating in relational the dblp database + author information importer from arnetminer
+Java application for translating in relational the dblp database + author information importer from arnetminer.
 
-Requires Maven
+#### Requirements: 
+
+* Maven
 
 #### Usage:
 
