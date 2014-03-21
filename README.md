@@ -3,6 +3,8 @@ dblpImporter
 
 Java application for translating in relational the dblp database + author information importer from arnetminer
 
+Requires Maven
+
 #### Usage:
 
 * run dblpImoprter.Parser.main passing as input the dblp.xml file;
