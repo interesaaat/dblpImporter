@@ -18,7 +18,7 @@
         |
         +-authorC-----------inColl
 
-  */
+*/
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -93,7 +93,7 @@ public class Parser {
       private int _counterProceedings = 0;
       private int _counterPhdThesis = 0;
       private int _counterMasterThesis = 0;
-      
+
       private FileOutputStream _fos_persons = null;
       private FileOutputStream _fos_authorA = null;
       private FileOutputStream _fos_article = null;
@@ -118,10 +118,10 @@ public class Parser {
       private PhdThesis _phdThesis = null;
       private MasterThesis _masterThesis = null;
       private InCollection _inColl = null;
-      
+
       public void openAllFis() throws SAXException {
          try {
-        	 new File("output").mkdirs();
+            new File("output").mkdirs();
             _fos_persons = new FileOutputStream("output/persons.csv");
             _fos_authorA = new FileOutputStream("output/authorA.csv");
             _fos_article = new FileOutputStream("output/article.csv");
@@ -180,13 +180,13 @@ public class Parser {
             _mapBooks.put(atts.getValue("key"), 0);
             return;
          } else if (rawName == PHD) {
-        	 _counterPhdThesis++;
+            _counterPhdThesis++;
             _currentElement = PHD;
             _surroundingElement = PHD;
             _phdThesis = new PhdThesis(_counterPhdThesis, atts.getValue("key"));
             return;
          } else if (rawName == MASTER) {
-        	 _counterMasterThesis++;
+            _counterMasterThesis++;
             _currentElement = MASTER;
             _surroundingElement = MASTER;
             _masterThesis = new MasterThesis(_counterMasterThesis, atts.getValue("key"));
@@ -282,7 +282,7 @@ public class Parser {
             _surroundingElement = null;
             return;
          } else if (rawName == INPROCEEDINGS) {
-        	 _mapInProceedings.put(_inProc.getInProcId(), _inProc);
+            _mapInProceedings.put(_inProc.getInProcId(), _inProc);
             _surroundingElement = null;
             return;
          } else if (rawName == BOOK) {
@@ -298,7 +298,7 @@ public class Parser {
             _surroundingElement = null;
             return;
          } else if (rawName == INCOLLECTION) {
-        	 _mapInCollections.put(_inColl.getInCollId(), _inColl);
+            _mapInCollections.put(_inColl.getInCollId(), _inColl);
             _surroundingElement = null;
             return;
          } else if (rawName == AUTHOR) {
@@ -745,7 +745,7 @@ public class Parser {
     		 _mapInCollections.remove(keys.next());
     	 }
     	 tmp = new ArrayList<String>();
-    	 
+ 
     	 keys = _mapInProceedings.keySet().iterator();
     	 while(keys.hasNext()) {
     		 key = keys.next();
@@ -775,8 +775,8 @@ public class Parser {
     				 int personId = authorsId.next();
 
     				 try {
-						_fos_authorC
-						 .write((personId+"|"+authorsC.get(personId)+"\n").getBytes());
+					_fos_authorC
+					   .write((personId+"|"+authorsC.get(personId)+"\n").getBytes());
 					} catch (IOException e) {
 						throw(new SAXException("error writing file",e));
 					}
@@ -796,7 +796,7 @@ public class Parser {
     				 int personId = authorsId.next();
 
     				 try {
-						_fos_authorI
+					    _fos_authorI
 						 .write((personId+"|"+authorsI.get(personId)+"\n").getBytes());
 					} catch (IOException e) {
 						throw(new SAXException("error writing file",e));
@@ -1063,8 +1063,6 @@ public class Parser {
          }
          return result;
       }
-
-
    }
 
    private Parser(String fileName) throws Exception {
