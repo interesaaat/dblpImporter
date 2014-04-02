@@ -9,7 +9,7 @@ Java application for translating in relational the dblp database + author inform
 
 #### Usage:
 
-* run dblpImoprter.Parser.main passing as input the dblp.xml file;
+* run dblpImoprter.Parser.main passing as input the dblp.xml file (the dtd file is needed and must reside in the same directory of the xml file);
 * create the db using the schema contained in resources (working only for MySQL); and
 * import in the db the generated csv files contained in the output directory.
 
