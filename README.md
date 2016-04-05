@@ -13,6 +13,10 @@ Java application for translating in relational the dblp database + author inform
 * create the db using the schema contained in resources (working only for MySQL); and
 * import in the db the generated csv files contained in the output directory.
 
+#### Known problems:
+
+If errors such as "JAXP00010001" are returned, run with the JVM parameters -Xmx4096m -DentityExpansionLimit=2500000
+
 arnetminerImporter
 ==================
 
